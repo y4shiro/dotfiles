@@ -21,6 +21,7 @@ if &compatible
       NeoBundle 'flazz/vim-colorschemes'
       NeoBundle 'w0ng/vim-hybrid'
       NeoBundle 'tomasr/molokai'
+      NeoBundle 'sjl/badwolf'
 
       " You can specify revision/branch/tag.
       NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -45,7 +46,7 @@ set backspace=indent,eol,start
 
 " 表示設定
 syntax on "コードの色分け
-colorscheme molokai "カラースキーム
+colorscheme badwolf "カラースキーム
 set number "行番号を表示
 set cursorline "現在の行を強調表示
 set cursorcolumn "現在の列を強調表示
