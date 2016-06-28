@@ -1,17 +1,17 @@
 "NeoBundle Scripts-----------------------------
-if &compatible
-      set nocompatible               " Be iMproved
-      endif
+set nocompatible
+filetype off
 
-      " Required:
-      set runtimepath^=/Users/yashiro/.vim/bundle/neobundle.vim/
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
 
-      " Required:
-      call neobundle#begin(expand('/Users/yashiro/.vim/bundle'))
+" Required:
+call neobundle#begin(expand('~/.vim/bundle'))
 
-      " Let NeoBundle manage NeoBundle
-      " Required:
-      NeoBundleFetch 'Shougo/neobundle.vim'
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
 
       " Add or remove your Bundles here:
       NeoBundle 'Shougo/neosnippet.vim'
@@ -22,6 +22,7 @@ if &compatible
       NeoBundle 'w0ng/vim-hybrid'
       NeoBundle 'tomasr/molokai'
       NeoBundle 'sjl/badwolf'
+      NeoBundle 'vim-scripts/sudo.vim'
 
       " You can specify revision/branch/tag.
       NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
