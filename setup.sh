@@ -1,8 +1,14 @@
 #!/bin/bash
 
-  DOT_FILES=(.bashrc .bash_profile .zshrc .vimrc  …)
+for file in .??*
+do
+    [[ "$file" == ".git" ]] && continue
+    [[ "$file" == ".DS_Store" ]] && continue
 
- for file in ${DOT_FILES[@]}
- do
-     ln -s $HOME/dotfiles/$file $HOME/$file
- done
+    if [ -e $HOME/$file ]; then
+        echo "既にファイルが存在します: $file"
+    else
+        ln -s $HOME/dotfiles/$file $HOME/$file
+        echo "シンボリックリンクを張りました: $file"
+    fi
+done
