@@ -14,8 +14,8 @@ do
 done
 
 # fish shell
-ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
-ln -s ~/dotfiles/fish/functions ~/.config/fish/functions
+ln -sf ~/dotfiles/fish/ ~/.config/fish
+ln -sf ~/dotfiles/omf/ ~/.config/omf
 ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
