@@ -14,9 +14,9 @@ do
 done
 
 # fish shell
-ln -sf ~/dotfiles/fish/ ~/.config/fish
-ln -sf ~/dotfiles/omf/ ~/.config/omf
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -nsf ~/dotfiles/fish ~/.config/fish
+ln -nsf ~/dotfiles/omf ~/.config/omf
+ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
