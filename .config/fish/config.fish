@@ -1,8 +1,8 @@
 # Path to Oh My Fish install.
-set -gx OMF_PATH "~/.local/share/omf"
+set -gx OMF_PATH "$HOME/.local/share/omf"
 
 # Customize Oh My Fish configuration path.
-set -gx OMF_CONFIG "~/.config/omf"
+set -gx OMF_CONFIG "$HOME/.config/omf"
 
 # homebrew
 set -x PATH /usr/local/bin /usr/local/sbin $PATH
