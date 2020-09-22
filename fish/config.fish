@@ -10,3 +10,4 @@ abbr ll 'ls -la'
 
 # bobthefish
 set -g theme_date_timezone Asia/Tokyo
+set -g theme_date_format "+%Y/%m/%d (%a) %H:%M:%S"
