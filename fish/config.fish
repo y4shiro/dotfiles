@@ -11,3 +11,7 @@ abbr ll 'ls -la'
 # bobthefish
 set -g theme_date_timezone Asia/Tokyo
 set -g theme_date_format "+%Y/%m/%d (%a) %H:%M:%S"
+
+# fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
