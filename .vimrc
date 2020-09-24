@@ -16,7 +16,7 @@ set visualbell     "ビープ時に画面を点滅
 set showmatch      "括弧入力時に対応する括弧を表示
 set scrolloff=1    "スクロール時の余白
 set clipboard+=unnamed "OS のクリップボードと連携
-set laststatus=2   "ステータスライン2行表示
+set laststatus=2   "ステータスラインを常に表示
 set wildmenu       "vim コマンドの Tab 補完
 set backspace=indent,eol,start " 挿入モード時にバックスペースで削除できるように
 set mouse=a        " バッファスクロール
