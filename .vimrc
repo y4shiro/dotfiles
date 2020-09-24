@@ -32,8 +32,9 @@ set incsearch      "インクリメントサーチ
 "Tab 系
 " 不可視文字を可視化(タブが「▸-」と表示される)
 set list listchars=tab:\▸\-
-set expandtab "Tabを半角スペースで入力
-set tabstop=2 "Tabの表示幅
+set expandtab    "Tabを半角スペースで入力
+set tabstop=2    "Tabの表示幅
+set shiftwidth=2 "自動的に入力されたインデントの空白を2つ分に設定
 
 "キーマップ
 " 折り返し時に表示行単位での移動が出来るように
