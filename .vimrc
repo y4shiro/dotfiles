@@ -20,6 +20,8 @@ set laststatus=2   "ステータスライン2行表示
 set wildmenu       "vim コマンドの Tab 補完
 
 "検索系
+set ignorecase     "検索文字列の小文字大文字を区別しない
+set wrapscan       "検索時、最後まで到達したら最初に戻る
 set hlsearch       "検索時に結果をハイライト
 set incsearch      "インクリメントサーチ
 
