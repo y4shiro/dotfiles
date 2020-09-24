@@ -21,6 +21,12 @@ set clipboard+=unnamed "OS のクリップボードと連携
 set laststatus=2   "ステータスライン2行表示
 set wildmenu       "vim コマンドの Tab 補完
 
+"Tab 系
+" 不可視文字を可視化(タブが「▸-」と表示される)
+set list listchars=tab:\▸\-
+set expandtab "Tabを半角スペースで入力
+set tabstop=2 "Tabの表示幅
+
 "キーマップ
 " 折り返し時に表示行単位での移動が出来るように
 nnoremap j gj
