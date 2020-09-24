@@ -18,6 +18,8 @@ set scrolloff=1    "スクロール時の余白
 set clipboard+=unnamed "OS のクリップボードと連携
 set laststatus=2   "ステータスライン2行表示
 set wildmenu       "vim コマンドの Tab 補完
+set backspace=indent,eol,start " 挿入モード時にバックスペースで削除できるように
+set mouse=a        " バッファスクロール
 
 "検索系
 set ignorecase     "検索文字列の小文字大文字を区別しない
