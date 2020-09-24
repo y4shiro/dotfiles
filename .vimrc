@@ -15,11 +15,13 @@ set smartindent    "改行時に自動でインデント整形
 set visualbell     "ビープ時に画面を点滅
 set showmatch      "括弧入力時に対応する括弧を表示
 set scrolloff=1    "スクロール時の余白
-set hlsearch       "検索時に結果をハイライト
-set incsearch      "インクリメントサーチ
 set clipboard+=unnamed "OS のクリップボードと連携
 set laststatus=2   "ステータスライン2行表示
 set wildmenu       "vim コマンドの Tab 補完
+
+"検索系
+set hlsearch       "検索時に結果をハイライト
+set incsearch      "インクリメントサーチ
 
 "Tab 系
 " 不可視文字を可視化(タブが「▸-」と表示される)
