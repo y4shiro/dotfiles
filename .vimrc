@@ -1,4 +1,5 @@
 syntax enable "シンタックスハイライト有効
+filetype plugin indent on "ファイルタイププラグイン有効
 
 "setting
 set encoding=utf-8 "文字エンコードを UTF-8 に指定
@@ -41,3 +42,10 @@ nnoremap k gk
 " 段落ごとの移動
 nnoremap <C-j> }
 nnoremap <C-k> {
+
+"HTML 閉じタグ補完
+augroup MyXML
+  autocmd!
+  autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+  autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
+augroup END
