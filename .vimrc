@@ -1,6 +1,10 @@
 syntax enable "シンタックスハイライト有効
 filetype plugin indent on "ファイルタイププラグイン有効
 
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+
 "setting
 set encoding=utf-8 "文字エンコードを UTF-8 に指定
 set nobackup       "バックアップファイルを作らない
