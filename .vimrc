@@ -1,3 +1,4 @@
+set nocompatible " Vi互換モードをオフ（Vimの拡張機能を有効）
 syntax enable "シンタックスハイライト有効
 filetype plugin indent on "ファイルタイププラグイン有効
 
@@ -22,19 +23,18 @@ set autoread       "ファイル編集中に変更が入ると自動で読み込
 set showcmd        "入力中コマンドの表示
 
 "エディタ
-set number         "行番号を表示
-set cursorline     "カーソルライン表示
+set number              "行番号を表示
+set cursorline          "カーソルライン表示
 set virtualedit=onemore "行末までカーソル移動を可能に
-set smartindent    "改行時に自動でインデント整形
-set visualbell     "ビープ時に画面を点滅
-set showmatch      "括弧入力時に対応する括弧を表示
-set scrolloff=1    "スクロール時の余白
-set clipboard+=unnamed "OS のクリップボードと連携
-set laststatus=2   "ステータスラインを常に表示
-set wildmenu       "vim コマンドの Tab 補完
+set visualbell          "ビープ時に画面を点滅
+set showmatch           "括弧入力時に対応する括弧を表示
+set scrolloff=1         "スクロール時の余白
+set clipboard+=unnamed  "OS のクリップボードと連携
+set laststatus=2        "ステータスラインを常に表示
+set wildmenu            "vim コマンドの Tab 補完
 set backspace=indent,eol,start " 挿入モード時にバックスペースで削除できるように
-set mouse=a        "バッファスクロール
-set ruler          "カーソルが置かれている行数を表示
+set mouse=a             "バッファスクロール
+set ruler               "カーソルが置かれている行数を表示
 
 "検索系
 set ignorecase     "検索文字列の小文字大文字を区別しない
@@ -48,6 +48,9 @@ set list listchars=tab:\▸\-
 set expandtab    "Tabを半角スペースで入力
 set tabstop=2    "Tabの表示幅
 set shiftwidth=2 "自動的に入力されたインデントの空白を2つ分に設定
+set softtabstop=2
+set smartindent  "改行時に自動でインデント整形
+set autoindent   "オートインデント
 
 "キーマップ
 " 折り返し時に表示行単位での移動が出来るように
