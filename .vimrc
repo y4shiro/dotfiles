@@ -43,8 +43,9 @@ set hlsearch       "検索時に結果をハイライト
 set incsearch      "インクリメントサーチ
 
 "Tab 系
-" 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:\▸\-
+" 不可視文字を可視化
+set list "空白文字の可視化
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%  "空白文字の詳細
 set expandtab    "Tabを半角スペースで入力
 set tabstop=2    "Tabの表示幅
 set shiftwidth=2 "自動的に入力されたインデントの空白を2つ分に設定
