@@ -10,6 +10,7 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " asyncomplete.vim
