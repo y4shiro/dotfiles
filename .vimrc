@@ -11,12 +11,17 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
 " asyncomplete.vim
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+
 
 "setting
 set encoding=utf-8 "文字エンコードを UTF-8 に指定
