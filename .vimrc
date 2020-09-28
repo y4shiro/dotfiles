@@ -11,6 +11,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
 call plug#end()
 
+" Editor Highlight
+highlight Pmenu ctermfg=white ctermbg=black
+highlight PmenuSel ctermfg=white ctermbg=gray
+
 " asyncomplete.vim
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
