@@ -8,8 +8,8 @@ set -x PATH $HOME/.anyenv/envs/ndenv/bin $PATH
 set -x PATH $NDENV_ROOT/shims $PATH
 
 # rbenv
-set -x PATH $HOME/.rbenv/bin $PATH
 status --is-interactive; and source (rbenv init -|psub)
+set -x RUBY_CONFIGURE_OPTS --with-openssl-dir=(brew --prefix openssl@1.1)
 
 # homebrew
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
