@@ -9,7 +9,6 @@ set -g fish_user_paths $NDENV_ROOT/shims $fish_user_paths
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
-set -g RUBY_CONFIGURE_OPTS --with-openssl-dir=(brew --prefix openssl@1.1)
 
 # homebrew
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
