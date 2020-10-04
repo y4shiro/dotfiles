@@ -8,6 +8,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 " ポップアップ周り
@@ -38,9 +40,14 @@ let g:lightline = {
       \ },
       \ }
 
-
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
+
+" ultisnipets
+let g:UltiSnipsExpandTrigger="<C-k>"
+let g:UltiSnipsJumpForwardTrigger="<C-b>"
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 "setting
 set encoding=utf-8 "文字エンコードを UTF-8 に指定
