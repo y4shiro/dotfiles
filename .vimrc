@@ -69,6 +69,7 @@ set wildmenu            "vim コマンドの Tab 補完
 set backspace=indent,eol,start " 挿入モード時にバックスペースで削除できるように
 set mouse=a             "バッファスクロール
 set ruler               "カーソルが置かれている行数を表示
+set nofixeol            "末尾の改行を消さない
 
 "検索系
 set ignorecase     "検索文字列の小文字大文字を区別しない
