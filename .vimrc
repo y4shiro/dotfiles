@@ -1,5 +1,5 @@
 set nocompatible " Vi互換モードをオフ（Vimの拡張機能を有効）
-syntax enable "シンタックスハイライト有効
+syntax on "シンタックスハイライト有効
 filetype plugin indent on "ファイルタイププラグイン有効
 
 call plug#begin('~/.vim/plugged')
@@ -10,7 +10,14 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'tomasr/molokai'
+Plug 'w0ng/vim-hybrid'
 call plug#end()
+
+" colorschemes
+" colorscheme iceberg
+colorscheme molokai
+" colorscheme hybrid
 
 " ポップアップ周り
 hi Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
