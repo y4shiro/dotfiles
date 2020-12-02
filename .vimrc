@@ -56,6 +56,9 @@ let g:UltiSnipsJumpForwardTrigger="<C-b>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 let g:UltiSnipsEditSplit="vertical"
 
+" coc-prettier
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
 "setting
 set encoding=utf-8 "文字エンコードを UTF-8 に指定
 set nobackup       "バックアップファイルを作らない
