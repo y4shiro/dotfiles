@@ -23,3 +23,4 @@ set -g theme_date_format "+%Y/%m/%d (%a) %H:%M:%S"
 # fzf
 set -g FZF_LEGACY_KEYBINDINGS 0
 set -g FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+set -g fish_user_paths "/usr/local/opt/openjdk@11/bin" $fish_user_paths
