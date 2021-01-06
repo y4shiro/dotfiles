@@ -12,6 +12,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tomasr/molokai'
 Plug 'w0ng/vim-hybrid'
+Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 " colorschemes
